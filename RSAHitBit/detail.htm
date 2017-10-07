@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>求多项式方程的小值解及其应用 - 中国知网
+        </title>
+    <link rel="stylesheet" type="text/css" href="http://piccache.cnki.net/kdn/KCMS/detail/resource/gb/css_min/Global.min.css&#xA;          ">
+    <link rel="stylesheet" type="text/css" href="http://piccache.cnki.net/kdn/KCMS/detail/resource/gb/css_min/knetdetail.min.css&#xA;          "><script type="text/javascript" src="/kcms/detail/js/getLink.aspx"></script><script type="text/javascript" src="http://piccache.cnki.net/kdn/KCMS/detail/resource/gb/js/min/rs.min.js&#xA;          "></script><script type="text/javascript" src="http://piccache.cnki.net/kdn/KCMS/detail/js/jquery-1.4.2.min.js&#xA;          "></script><script type="text/javascript" src="http://piccache.cnki.net/kdn/KCMS/detail/js/min/jquery.PrintArea.min.js&#xA;          "></script><script type="text/javascript" src="http://piccache.cnki.net/kdn/KCMS/detail/js/min/Common.min.js&#xA;          "></script><script type="text/javascript" src="http://piccache.cnki.net/kdn/KCMS/detail/js/min/highcharts.min.js&#xA;          "></script><script type="text/javascript" src="http://piccache.cnki.net/kdn/KCMS/detail/js/min/json2.min.js&#xA;          "></script><script type="text/javascript" src="http://piccache.cnki.net/kdn/KCMS/detail/js/raphael.amd.js&#xA;          "></script><script type="text/javascript" src="http://piccache.cnki.net/kdn/KCMS/detail/js/min/NiceDCenter.min.js&#xA;          "></script><script type="text/javascript" src="http://piccache.cnki.net/kdn/KCMS/detail/js/min/Kajax.min.js&#xA;          "></script><script type="text/javascript" src="http://piccache.cnki.net/kdn/KCMS/detail/js/min/CnkiFlashEmbed.min.js&#xA;          "></script><script type="text/javascript" src="http://piccache.cnki.net/kdn/KCMS/detail/js/min/jquery.mousewheel.min.js&#xA;          "></script><script type="text/javascript" src="http://piccache.cnki.net/kdn/KCMS/detail/js/min/CatalogFun.min.js&#xA;          "></script><script type="text/javascript" src="http://piccache.cnki.net/kdn/KCMS/detail/js/min/detail.min.js&#xA;          "></script></head>
+  <body><script type="text/javascript" src="http://piccache.cnki.net/kdn/KCMS/detail/js/min/WideScreen.min.js&#xA;              "></script><input id="loginuserid" type="hidden" value="WEEvREcwSlJHSldRa1FhcEE0NXdpUDRjKzQ4RGRlcy9hUWJiSnRFc3dTRT0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!"><input id="listv" type="hidden" value=""><input id="deliveryType" type="hidden" value=""><input id="deliveryUid" type="hidden" value=""><input id="deliveryUname" type="hidden" value=""><input id="deliveryCoutent" type="hidden" value="#"><input id="deliveryTable" type="hidden" value=""><input id="SingePointShow" type="hidden" value=""><div id="headerBox"></div>
+    <div class="line-box">
+      <h1><span id="catalog_Ptitle"></span><span class="kcmslogo"></span></h1>
+    </div>
+    <div class="wxwrap">
+      <div class="searchtop"><span class="showPlaceholder"><input id="searchinput" name="searchinput" type="text" onkeypress="setPlaceholder(this);" onpaste="return setPlaceholder(this);" onkeyup="setPlaceholder(this);"><label for="searchinput" class="placeholder" id="searchtext">请输入搜索内容</label></span><input id="searchbtn" type="button" value="检索" onclick="submitSearch()"></div>
+    </div><script>      
+      $("#searchinput").keypress(function (event) {
+      if (event.keyCode == 13)
+      submitSearch();
+      });
+    </script><script>$("#catalog_Ptitle").html("博硕论文");</script><div class="dazhong-ad" style="height:100px; padding:10px 0 0 0; width:1200px; margin:0 auto; overflow:hidden;">
+      <div class="dazhong-ad1" style="height:100px; width:226px; margin-right:10px; float:left;"><script type="text/javascript" src="&#xA;            http://adp.cnki.net/GetADInfo.ashx?area=R013&amp;pc=G0015&amp;kw=%E5%9B%A0%E5%AD%90%E5%88%86%E8%A7%A3|%E7%BA%A6%E5%8C%96%E5%9F%BA|LLL%E7%AE%97%E6%B3%95|&amp;pykm=&amp;sc=I136&amp;title=%E6%B1%82%E5%A4%9A%E9%A1%B9%E5%BC%8F%E6%96%B9%E7%A8%8B%E7%9A%84%E5%B0%8F%E5%80%BC%E8%A7%A3%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8"></script></div>
+      <div class="dazhong-ad2" style="height:100px; width:654px; margin-right:10px; float:left;"><script type="text/javascript" src="&#xA;            http://adp.cnki.net/GetADInfo.ashx?area=R012&amp;pc=G0012&amp;kw=%E5%9B%A0%E5%AD%90%E5%88%86%E8%A7%A3|%E7%BA%A6%E5%8C%96%E5%9F%BA|LLL%E7%AE%97%E6%B3%95|&amp;pykm=&amp;sc=I136&amp;title=%E6%B1%82%E5%A4%9A%E9%A1%B9%E5%BC%8F%E6%96%B9%E7%A8%8B%E7%9A%84%E5%B0%8F%E5%80%BC%E8%A7%A3%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8"></script></div>
+      <div class="dazhong-ad3" style="height:100px; width:300px; float:left;"><script type="text/javascript" src="&#xA;          http://adp.cnki.net/GetADInfo.ashx?area=R015&amp;pc=G0013&amp;kw=%E5%9B%A0%E5%AD%90%E5%88%86%E8%A7%A3|%E7%BA%A6%E5%8C%96%E5%9F%BA|LLL%E7%AE%97%E6%B3%95|&amp;pykm=&amp;sc=I136&amp;title=%E6%B1%82%E5%A4%9A%E9%A1%B9%E5%BC%8F%E6%96%B9%E7%A8%8B%E7%9A%84%E5%B0%8F%E5%80%BC%E8%A7%A3%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8"></script></div>
+    </div>
+    <div id="mainArea" class="wxwrap">
+      <div id="CatalogSide" class="wxside kcmsCatalog">
+        <div class="clHd">知识节点</div>
+        <div class="clBd">
+          <dl>
+            <dt id="lcatalog_Ptitle" onclick="TurnToTitle('catalog_Ptitle')"><a><i></i>基本信息
+            </a></dt>
+          </dl>
+          <dl>
+            <dt id="lcatalog_ABSTRACT" onclick="TurnToTitle('catalog_ABSTRACT')"><a><i></i>摘要
+              </a></dt>
+          </dl>
+          <dl>
+            <dt id="lcatalog_KEYWORD" onclick="TurnToTitle('catalog_KEYWORD')"><a><i></i>关键词
+              </a></dt>
+          </dl>
+          <dl>
+            <dt id="lcatalog_TUTOR" onclick="TurnToTitle('catalog_TUTOR')"><a><i></i>导师
+              </a></dt>
+          </dl>
+          <dl>
+            <dt id="lcatalog_ZTCLS" onclick="TurnToTitle('catalog_ZTCLS')"><a><i></i>分类号
+              </a></dt>
+          </dl>
+          <dl>
+            <dt id="lcatalog_divimg" class="leftBar_Img" style="display:none;" onclick="TurnToTitle('catalog_divimg')"><a><i></i>文内图片
+            </a></dt>
+          </dl>
+        </div>
+        <div class="clHd">
+      知识网络
+      <input id="catalogIds" type="hidden" value=""></div>
+        <div class="clBd">
+          <dl>
+            <dt id="lcatalog_ref" onclick="TurnToTitle('catalog_ref')"><a><i></i>引文网络
+              </a></dt>
+          </dl>
+          <dl>
+            <dt id="lcatalog_func601" onclick="GetAndShowFiles(this);"><a><i></i>关联作者
+          </a></dt>
+          </dl>
+          <dl>
+            <dt id="lcatalog_func604" onclick="GetAndShowFiles(this);"><a><i></i>相似文献
+          </a></dt>
+          </dl>
+          <dl>
+            <dt id="lcatalog_func605" onclick="GetAndShowFiles(this);"><a><i></i>读者推荐
+          </a></dt>
+          </dl>
+          <dl>
+            <dt id="lcatalog_func602" onclick="GetAndShowFiles(this);"><a><i></i>主题指数
+          </a></dt>
+          </dl>
+          <dl>
+            <dt id="lcatalog_func603" onclick="GetAndShowFiles(this);"><a><i></i>相关基金文献
+              </a></dt>
+          </dl>
+        </div>
+      </div>
+      <div class="wxmain">
+        <div class="wxTitle">
+          <h2 class="title">求多项式方程的小值解及其应用</h2>
+          <div class="author"><span><a target="_blank" onclick="&#xA;                    TurnPageToKnet('au','刘瑜','11277688')&#xA;                  ">刘瑜</a></span></div>
+          <div class="orgn"><span><a onclick="&#xA;                    TurnPageToKnet('in','山东大学','0237047')&#xA;                  ">山东大学</a></span></div>
+          <div class="link"><a class="icon icon-output" href="javascript:void(0);" onclick="&#xA;        SubTurnExport('http://search.cnki.net/kns/ViewPage/viewsave.aspx','CMFD2009!2008190486.nh!1!0')&#xA;      "><i></i>导出/参考文献
+    </a><span id="AttentionYes" style="display:none;" class="followtop"><a class="icon icon-followSuccess" title="可以去 我的关注 查看更新" target="mycnkitarget" href="http://kns.cnki.net/knsdelivery/mycnki.aspx?uid=WEEvREcwSlJHSldRa1FhcEE0NXdpUDRjKzQ4RGRlcy9hUWJiSnRFc3dTRT0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!&amp;type=2&#xA;                    "><i></i>已关注       
+      </a></span><span class="followtop" id="AttentionNo"><a class="icon icon-follow" title="关注文献" href="javascript:void(0);" onclick="&#xA;          AttentionServiceParam('2', 'WEEvREcwSlJHSldRa1FhcEE0NXdpUDRjKzQ4RGRlcy9hUWJiSnRFc3dTRT0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!','CMFD2009','2008190486.nh','0');&#xA;        "><i></i>关注
+      </a><div class="popflow" id="popupTips" style="display:none;">
+                <div class="popflowArr"></div>
+                <div class="popflowCot">
+                  <div class="hd"><a href="javascript:void(0);" onclick="$('#popupTips').hide();$('#popupmsg').html('')" class="close">X</a></div>
+                  <div class="bd">
+                    <p class="mes" id="popupmsg" name="popupmsg">关注成功！</p>
+                    <p class="des">
+              加关注后您将方便地在 <a target="_mycnki" href="http://kns.cnki.net/knsdelivery/mycnki.aspx?uid=WEEvREcwSlJHSldRa1FhcEE0NXdpUDRjKzQ4RGRlcy9hUWJiSnRFc3dTRT0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!&amp;type=2&#xA;                    ">
+                我的关注
+              </a> 中得到本文献的被引频次变化的通知！
+            </p>
+                  </div>
+                  <div class="ft"><a class="extra" title="订阅" href="javascript:void(0);" onclick="&#xA;                SubScription('2', 'WEEvREcwSlJHSldRa1FhcEE0NXdpUDRjKzQ4RGRlcy9hUWJiSnRFc3dTRT0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!', 'CMFD2009|');&#xA;              ">
+              你还可以通过其他方式得到推送信息&gt;&gt;
+            </a></div>
+                </div>
+              </div><script>
+        AttentionServiceParam('2', 'WEEvREcwSlJHSldRa1FhcEE0NXdpUDRjKzQ4RGRlcy9hUWJiSnRFc3dTRT0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!','CMFD2009','2008190486.nh','1');
+      </script></span><span class="shareBoard" onmouseover="$('#sharedet').show();$('#this').addClass('shareBoardCUR')" onmouseout="$('#sharedet').hide();$('#this').removeClass('shareBoardCUR')"><a class="icon icon-share" href="#"><i></i>分享<em></em></a><script> document.write(ShareAstr('shareHide'));</script></span><a class="icon icon-favor" title="收藏" href="javascript:void(0);" onclick="AddFavTitle('')"><i></i>收藏
+    </a><a class="icon icon-print" href="javascript:void(0);" onclick="window.print();"><i></i>打印
+    </a><a class="icon icon-comment" title="评论" href="#" style="display:none;"><i></i>评论
+    </a></div>
+        </div>
+        <div class="wxInfo">
+          <div class="wxBaseinfo">
+            <p><label id="catalog_ABSTRACT">摘要：</label><span id="ChDivSummary" name="ChDivSummary">RSA密码体制由Rivest，Shamir及Adleman始创[41]，是目前世界上所知应用最广泛的公钥密码体制，使用RSA最主要的缺点是加解密操作的费用相当大．多素数RSA为标准RSA密码体制的一个推广，其中模由多于两个的素数相乘得来，当加密操作执行时，模每个素数，而后合并使用中国剩余定理．加密的代价降到每个素数（对于确定大小的模）．因此，当需要降低成本时，多素数RSA可能为RSA的一个现实的选择．RSA的安全性自它创造之日起已被很好的研究（参见Boneh[6]）．若多素数RSA现在实行它的安全性需被更进一步的研究．目前，存在部分私钥泄露攻击，攻击者拥有私钥比特的某些知识并用它来攻破系统，结果是具有实际意义的．因为可能削弱私钥的比特．1998年，Boneh，Durfee和Frankel在[2]提出RSA的几种部分私钥泄露攻击，其中的某些攻击要求知道私钥的最少有效比特（LSBs），另一些要求知道最多有效比特（MSBs）．另外，在他们的攻击中，公钥必须是相对小的．Wiener的攻击[46]及Boneh和Durfee[4]的改进可被看作部分私钥泄露攻击，其中，已知的最多有效比特均等于0．在[2]中提出的问题是是否存在RSA的密钥泄露攻击，可以对比模的平方根大小大的公钥起作用．2003年，Blomer和May[1]描述了一些攻击，允许大一点的公钥，但仍未达到模的实际大小，而后Ernst,Jochemsz等人在[17]中提出攻击对实际大小的公钥，它可以逐渐达到实际的私钥大小的算法．在96欧密会上，Coppersmith提出一种寻找双变量整系数多项式方程小值根的算法，该算法基于格基约化算法．在此基础上发展了分解因子攻击，它适用于知道部分因子的与多素数RSA模相同形式的整数．该攻击是Boneh，Durfee和Howgrave-Graham的格基分解因子思想的推广，模的形式为N=p<sup>r</sup>q．对平衡r素数RSA假设知道N的r个素数中的v个1≤v≤r-2，另外对零或者更多余下的未知素数和私钥，知道最多或最少的有效比特．Coppersmith的解决双变量多项式方程的算法被Howgrave-Graham在[24]中进一步简化．除了更易于理解和应用，Howgrave-Graham的方法的一个显著的优点是可以启发式的延伸到多变量多项式方程．在此基础上Jean-SebastienCoron在[15]中提出了一项简化算法，可以在得知n=pq中p的高位log<sub>2</sub> n／4比特的前提下分解n.本论文是应用Jean-SebastienCoron的简化算法来求解三变量整系数多项式方程的小根，可以在得知n=pqr中p，q的高位或低位log<sub>2</sub>n／5比特的前提下分解n．本文主要结论为：定理3．1令p（x，y，z）为Z上三变量不可约多项式，每个单变量的最高次数是δ．令X，Y和Z为期望的整数解（x<sub>0</sub>，y<sub>0</sub>，z<sub>0</sub>）的上界．令对某些ε&gt;0，那么在多项式时间（logW,2<sup>δ</sup>）内，可以找到使得p（x<sub>0</sub>，y<sub>0</sub>，z<sub>0</sub>）=0，|x<sub>0</sub>|≤X，|y<sub>0</sub>|≤Y,|z<sub>0</sub>|≤Z的所有整数对（x<sub>0</sub>，y<sub>0</sub>，z<sub>0</sub>）．该攻击如同多素数RSA的其它格基攻击一样建立在代数独立假设上．定理3．3对任意的ε&gt;0，给定N=PQR及P,Q的高位或低位1/5log<sub>2</sub><sup>N</sup>比特，我们可以在多项式时间（log N）内得到N的分解式．定理4．1令p（x<sub>1</sub>,x<sub>2</sub>,...,x<sub>r</sub>）为整数上的r变量多项式，每个单变量的最高次数是δ．令X<sub>1</sub>，X<sub>2</sub>,...，X<sub>r</sub>为期望的整数解x<sub>1</sub>,x<sub>2</sub>,...,x<sub>r</sub>的上界．令W=max<sub>i1,i2,...,i<sub>r</sub></sub>|p<sub>i1,i2,...,i<sub>r</sub></sub>|X<sub>1</sub><sup>i</sup>1X<sub>2</sub><sup>i</sup>2...X<sub>r</sub><sup>i</sup>r.对某些ε&gt;0，那么在多项式时间内，可以找到使p(x<sub>10</sub>,x<sub>20</sub>,...,x<sub>r0</sub>)=0，|x<sub>10</sub>|≤X<sub>1</sub>,|x<sub>20</sub>|≤X<sub>2</sub>,...,|x<sub>r0</sub>|≤X<sub>r</sub>的所有整数对(x<sub>10</sub>,x<sub>20</sub>,...,x<sub>r0</sub>)．定理4．2对任意ε&gt;o，对于N=P<sub>1</sub>,P<sub>2</sub>...P<sub>r</sub>给定其中P<sub>1</sub>,P<sub>2</sub>,...,P<sub>r-1</sub>的高位1/r+2 log<sub>2</sub>N比特，我们可以在多项式时间内得到N的分解式．</span><span><a id="ChDivSummaryMore" onclick="MoerSummary('ChDivSummary','ChDivSummaryMore','ChDivSummaryReset')" style="display:none">更多</a><a id="ChDivSummaryReset" onclick="ResetSummary('ChDivSummary','ChDivSummaryMore','ChDivSummaryReset')" style="display:none">还原</a></span><br></p><script type="text/javascript">
+      AbstractFilter('ChDivSummary','ChDivSummaryMore','ChDivSummaryReset');
+    </script><p><label id="catalog_KEYWORD">关键词：</label><a onclick="&#xA;                      TurnPageToKnet('kw','因子分解','')&#xA;                    ">因子分解;  </a><a onclick="&#xA;                      TurnPageToKnet('kw','约化基','')&#xA;                    ">约化基;  </a><a onclick="&#xA;                      TurnPageToKnet('kw','LLL算法','')&#xA;                    ">LLL算法;  </a></p>
+            <p><label id="catalog_TUTOR">导师：</label><a onclick="&#xA;                      TurnPageToKnet('au','王小云','')&#xA;                    ">王小云;  </a></p>
+            <p><label id="catalog_ZTCLS">分类号：</label>TN918.1</p>
+            <p><label id="catalog_divimg" style="display:none ;">文内图片：</label><div id="imgdiv" class="imgcont"></div>
+            </p>
+            <div class="dllink" id="DownLoadParts"><a target="_blank" onclick="WriteKrsDownLog()" class="icon-dlGreen" href="http://search.cnki.net/kns/download.aspx?filename=tJlNwMUTrAlRD1UeVhmYEFVUnFDMy1mMIVlNEdnckRTNGVTU6VkZG9kTQdmawBVcth2ThNUVkBnQpJUcnB1VsNlRyoXbsN2dIZTWR10ZzoFaFJWelZENz92Z19Cd50WQXJlTQl1T3IjUQx2KBNlcmdlW202LWNUN&amp;dflag=nhdown&amp;tablename=CMFD2009&amp;uid=WEEvREcwSlJHSldRa1FhcEE0NXdpUDRjKzQ4RGRlcy9hUWJiSnRFc3dTRT0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!">整本下载
+    </a><a target="_blank" onclick="WriteKrsDownLog()" class="icon-dlBlue" href="http://search.cnki.net/kns/download.aspx?filename=tJlNwMUTrAlRD1UeVhmYEFVUnFDMy1mMIVlNEdnckRTNGVTU6VkZG9kTQdmawBVcth2ThNUVkBnQpJUcnB1VsNlRyoXbsN2dIZTWR10ZzoFaFJWelZENz92Z19Cd50WQXJlTQl1T3IjUQx2KBNlcmdlW202LWNUN&amp;dflag=downpage&amp;tablename=CMFD2009&amp;uid=WEEvREcwSlJHSldRa1FhcEE0NXdpUDRjKzQ4RGRlcy9hUWJiSnRFc3dTRT0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!">分页下载</a><a target="_blank" onclick="WriteKrsDownLog()" class="icon-dlBlue" href="http://search.cnki.net/kns/download.aspx?filename=tJlNwMUTrAlRD1UeVhmYEFVUnFDMy1mMIVlNEdnckRTNGVTU6VkZG9kTQdmawBVcth2ThNUVkBnQpJUcnB1VsNlRyoXbsN2dIZTWR10ZzoFaFJWelZENz92Z19Cd50WQXJlTQl1T3IjUQx2KBNlcmdlW202LWNUN&amp;dflag=catalog&amp;tablename=CMFD2009&amp;uid=WEEvREcwSlJHSldRa1FhcEE0NXdpUDRjKzQ4RGRlcy9hUWJiSnRFc3dTRT0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!">分章下载</a><a target="_blank" onclick="WriteKrsDownLog()" class="icon-dlGreen" href="http://kreader.cnki.net//Kreader/RedriectPage.aspx?dbCode=cdmd&amp;filename=2008190486.nh&amp;tablename=CMFD2009&amp;uid=WEEvREcwSlJHSldRa1FhcEE0NXdpUDRjKzQ4RGRlcy9hUWJiSnRFc3dTRT0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!">在线阅读
+    </a><span class="qrcode"><img alt="" width="150px" height="150px" src="http://app.cnki.net/Parts/QRCode/Get?source=KCMS&amp;text=http%3a%2f%2fm.cnki.net%2fcnkiday%2fappdownzwj.html%3ftype%3dCMFD%26id%3d2008190486.nh"><p style="font-size:12px;line-height:14px;text-align:center; margin-top:5px;">移动知网</p>
+                  <p style="font-size:12px; line-height:14px; text-align:center; margin-bottom:5px; ">全球学术快报</p></span></div>
+            <div class="total"><span class="a"><label>下载：</label><b>110</b></span><span class="h"><label>页数：</label><b>48</b></span><span class="h"><label>大小：</label><b>1719K</b></span></div>
+            <div class="hotspotCen"><label>热点关注度：</label><div class="hotspot"><span value="" style="width:0%;" class="HotSpotPower"></span></div><span class="HotSpotValue" id="HotValue">0</span><b class="h">（注：最近下载、浏览的数量值）</b></div><script>GetFileHot('2008190486.nh');</script></div>
+          <div id="func608" class="wxsour"></div>
+        </div>
+        <div class="wxMod" id="catalog_ref" style="display:none">
+          <h2 id="MapTitle" class="hd hdTab"><a class="active" href="javascript:void(0)" onclick="showRefChart(this)">引文网络</a><a href="javascript:void(0)" onclick="showFlash(this)">参考引证图谱</a></h2>
+        </div>
+        <div class="wxMod" id="ref_nodata" style="display:none">
+          <h3 class="title2">
+        引文网络
+        <b class="titleTotle">
+          未找到相关数据
+        </b></h3>
+        </div>
+        <div id="MapArea" style="display:none">
+          <div class="MapAreaLeft">
+            <div class="map">
+              <div class="jdwx" title="">节点文献</div>
+              <div class="gywx"><a id="rl5" name="rl" title="（也称同引文献）与本文有相同参考文献的文献，与本文有共同研究背景或依据">共引文献</a><span id="rc5">(0)</span></div>
+              <div class="tbywx"><a id="rl6" name="rl" title="与本文同时被作为参考文献引用的文献，与本文共同作为进一步研究的基础">同被引文献</a><span id="rc6">(0)</span></div>
+              <div class="rjckwx"><a id="rl2" name="rl" title="本文参考文献的参考文献。进一步反映本文研究工作的背景和依据">二级参考文献</a><span id="rc2">(0)</span></div>
+              <div class="ckwx"><a id="rl1" name="rl" title="反映本文研究工作的背景和依据">参考文献</a><span id="rc1">(0)</span></div>
+              <div class="yzwx"><a id="rl3" name="rl" title="引用本文的文献。本文研究工作的继续、应用、发展或评价">引证文献</a><span id="rc3">(0)</span></div>
+              <div class="rjyzwx"><a id="rl4" name="rl" title="本文引证文献的引证文献。更进一步反映本文研究工作的继续、发展或评价">二级引证文献</a><span id="rc4">(0)</span></div>
+            </div>
+            <div class="time"><span onmouseover="TimeAxisMoveRight('AxisFrameDivLeft');" onmouseout="TimeAxisStop();" onclick="TimeAxisMoveFaster();" class="ArrowLeftDisable" title="显示前面的年份" id="ArrowLeft_AxisFrameDivLeft"></span><div class="year" id="AxisFrameDivLeft"></div><span onmouseover="TimeAxisMoveLeft('AxisFrameDivLeft');" onmouseout="TimeAxisStop();" onclick="TimeAxisMoveFaster()" class="ArrowRightEnable" title="显示后面的年份" id="ArrowRight_AxisFrameDivLeft"></span><div class="TimeMiddle" id="AxisFrameDivCurrent" style="height: 55px;"></div><span onmouseover="TimeAxisMoveRight('AxisFrameDivRight');" onmouseout="TimeAxisStop();" onclick="TimeAxisMoveFaster()" class="ArrowLeftDisable" title="显示前面的年份" id="ArrowLeft_AxisFrameDivRight"></span><div class="year" id="AxisFrameDivRight"></div><span onmouseover="TimeAxisMoveLeft('AxisFrameDivRight');" onmouseout="TimeAxisStop();" onclick="TimeAxisMoveFaster()" class="ArrowRightEnable" title="显示后面的年份" id="ArrowRight_AxisFrameDivRight"></span><span style="display: none; visibility: hidden;" class="ArrowLeftEnable" alt=""></span><div class="clear"></div>
+            </div>
+            <div id="NodeValueDiv1" class="TimeHide" onmouseout="HideNodeValueDiv();" onmouseover="window.clearTimeout(window.timeout_NodeValueDiv);">
+              <ul>
+                <li><a id="NodeValueDiv1ReferType1Link" onclick="ChangeReferType('1');" title="反映本文研究工作的背景和依据">参考文献</a><span id="NodeValueDiv1ReferType1Level1"></span></li>
+                <li><a id="NodeValueDiv1ReferType2Link" onclick="ChangeReferType('2');" title="本文参考文献的参考文献。进一步反映本文研究工作的背景和依据">二级参考文献</a><span id="NodeValueDiv1ReferType2Level2"></span></li>
+              </ul>
+            </div>
+            <div id="NodeValueDiv2" class="TimeHide" onmouseout="HideNodeValueDiv();" onmouseover="window.clearTimeout(window.timeout_NodeValueDiv);">
+              <ul>
+                <li><a id="NodeValueDiv2ReferType4Link" onclick="ChangeReferType('3');" title="引用本文的文献。本文研究工作的继续、应用、发展或评价">引证文献</a><span id="NodeValueDiv2ReferType4Level1"></span></li>
+                <li><a id="NodeValueDiv2ReferType16Link" onclick="ChangeReferType('4');" title="本文引证文献的引证文献。更进一步反映本文研究工作的继续、发展或评价">二级引证文献</a><span id="NodeValueDiv2ReferType16Level2"></span></li>
+              </ul>
+            </div>
+            <div id="NodeValueDiv3" class="TimeHide" onmouseout="HideNodeValueDiv();" onmouseover="window.clearTimeout(window.timeout_NodeValueDiv);">
+              <ul>
+                <li><a id="NodeValueDiv3ReferType1Link" onclick="ChangeReferType('1');" title="反映本文研究工作的背景和依据">参考文献</a><span id="NodeValueDiv3ReferType1Level1"></span></li>
+                <li><a id="NodeValueDiv3ReferType2Link" onclick="ChangeReferType('2');" title="本文参考文献的参考文献。进一步反映本文研究工作的背景和依据">二级参考文献</a><span id="NodeValueDiv3ReferType2Level2"></span></li>
+                <li><a id="NodeValueDiv3ReferType4Link" onclick="ChangeReferType('3');" title="引用本文的文献。本文研究工作的继续、应用、发展或评价">引证文献</a><span id="NodeValueDiv3ReferType4Level1"></span></li>
+                <li><a id="NodeValueDiv3ReferType16Link" onclick="ChangeReferType('4');" title="本文引证文献的引证文献。更进一步反映本文研究工作的继续、发展或评价">二级引证文献</a><span id="NodeValueDiv3ReferType16Level2"></span></li>
+              </ul>
+            </div>
+          </div>
+        </div><script type="text/javascript">       
+        SetRefChartDataEx('CMFD','2008190486.nh','CMFD2009','2008');
+      </script><iframe id="frame1" name="frame1" scrolling="no" height="0" frameborder="no" width="100%"></iframe>
+        <div id="func607" class="wxMod"></div>
+        <iframe id="framecatalog_CkFiles" name="framecatalog_CkFiles" width="100%" height="0" frameborder="no" scrolling="no" src=""></iframe>
+        <iframe id="framecatalog_YzFiles" name="framecatalog_YzFiles" width="100%" height="0" frameborder="no" scrolling="no" src=""></iframe>
+        <div id="func601" class="wxMod"></div>
+        <div id="func604" class="wxMod"></div>
+        <div id="func605" class="wxMod"></div>
+        <div id="func602" class="wxMod"></div>
+        <div id="func603" class="wxMod"></div>
+      </div>
+    </div><script type="text/javascript">
+      try{ GetImgPath('2008190486.nh');}catch(err){};
+      
+      WriteToPage('2008190486.nh','CMFD2009','CMFD','CDMD','608');
+      function LoadFilesFromId(oid)
+      {
+      if (!oid) return;
+      switch (oid)
+      {
+      case "catalog_func607":  
+      WriteToPage('2008190486.nh','CMFD2009','CMFD','CDMD','607');
+      LoadFile('framecatalog_CkFiles','/kcms/detail/frame/list.aspx?filename=2008190486.nh&dbcode=CMFD&dbname=CMFD2009&reftype=1');
+      LoadFile('framecatalog_YzFiles','/kcms/detail/frame/list.aspx?filename=2008190486.nh&dbcode=CMFD&dbname=CMFD2009&reftype=3');
+
+      break;
+      case "catalog_func601":  
+      WriteToPage('2008190486.nh','CMFD2009','CMFD','CDMD','601');
+      break;
+      case "catalog_func602":
+      WriteToPage('2008190486.nh','CMFD2009','CMFD','CDMD','602');
+      break;
+      case "catalog_func603":
+      WriteToPage('2008190486.nh','CMFD2009','CMFD','CDMD','603');
+      break;
+      case "catalog_func604":
+      WriteToPage('2008190486.nh','CMFD2009','CMFD','CDMD','604');
+      break;
+      case "catalog_func605":
+      WriteToPage('2008190486.nh','CMFD2009','CMFD','CDMD','605');
+      break;
+      default : break;
+      }
+      }
+    </script><div class="wxToolbar" id="wxDlToolbar">
+      <div class="wxwrap">
+        <div class="dllink"><a target="_blank" onclick="WriteKrsDownLog()" class="icon-dlGreen" href="/kns/download.aspx?filename=tJlNwMUTrAlRD1UeVhmYEFVUnFDMy1mMIVlNEdnckRTNGVTU6VkZG9kTQdmawBVcth2ThNUVkBnQpJUcnB1VsNlRyoXbsN2dIZTWR10ZzoFaFJWelZENz92Z19Cd50WQXJlTQl1T3IjUQx2KBNlcmdlW202LWNUN&amp;dflag=nhdown&amp;tablename=CMFD2009">整本下载
+          </a><a target="_blank" onclick="WriteKrsDownLog()" class="icon-dlBlue" href="/kns/download.aspx?filename=tJlNwMUTrAlRD1UeVhmYEFVUnFDMy1mMIVlNEdnckRTNGVTU6VkZG9kTQdmawBVcth2ThNUVkBnQpJUcnB1VsNlRyoXbsN2dIZTWR10ZzoFaFJWelZENz92Z19Cd50WQXJlTQl1T3IjUQx2KBNlcmdlW202LWNUN&amp;dflag=downpage&amp;tablename=CMFD2009">分页下载
+          </a><a target="_blank" onclick="WriteKrsDownLog()" class="icon-dlBlue" href="/kns/download.aspx?filename=tJlNwMUTrAlRD1UeVhmYEFVUnFDMy1mMIVlNEdnckRTNGVTU6VkZG9kTQdmawBVcth2ThNUVkBnQpJUcnB1VsNlRyoXbsN2dIZTWR10ZzoFaFJWelZENz92Z19Cd50WQXJlTQl1T3IjUQx2KBNlcmdlW202LWNUN&amp;dflag=catalog&amp;tablename=CMFD2009">分章下载
+            </a><a target="_blank" onclick="WriteKrsDownLog()" class="icon-dlGreen" href="/Kreader/RedriectPage.aspx?dbCode=cdmd&amp;filename=2008190486.nh&amp;tablename=CMFD2009&amp;uid=WEEvREcwSlJHSldRa1FhcEE0NXdpUDRjKzQ4RGRlcy9hUWJiSnRFc3dTRT0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!">在线阅读
+          </a></div>
+        <div class="infotxt infotxtLar">
+          <div class="total"><span class="a"><label>下载：</label><b>110</b></span><span class="h"><label>页数：</label><b>48</b></span><span class="h"><label>大小：</label><b>1719K</b></span></div>
+          <div class="hotspotCen"><label>热点关注度：</label><div class="hotspot"><span value="" style="width:0%;" class="HotSpotPower"></span></div><span class="HotSpotValue" id="HotValue">0</span><b class="h">（注：最近下载、浏览的数量值）</b></div><script>GetFileHot('2008190486.nh');</script></div><script>FloatDownloadPartCantrol();</script></div>
+    </div>
+    <iframe scrolling="no" frameborder="0" id="headad" style="display:none;"></iframe>
+    <div class="wait" id="waitDiv" style="visibility:hidden;">
+          正在为您查找，请稍等...
+        </div>
+    <div id="footerBox"></div>
+    <div class="fixedbar">
+      <div class="adviceside"><a class="fixCon" target="_blank" href="http://help.cnki.net/">在线咨询</a><a target="_blank" class="fixFed" href="http://kns.cnki.net/knsvote/vote.aspx">
+          用户反馈
+        </a></div>
+      <div class="backtop hiddenV" id="backtop"><a id="backTopSide" href="javascript:scroll(0,0);" title="返回顶端"></a></div>
+    </div><script type="text/javascript" src="http://search.cnki.net/KRS/Scripts/Recommend.js"></script><script> toTop();</script><script>
+      InsertCatalog();
+      KLogin.getHeader('WEEvREcwSlJHSldRa1FhcEE0NXdpUDRjKzQ4RGRlcy9hUWJiSnRFc3dTRT0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!');KLogin.getFooter();</script><script type="text/javascript" src="http://piccache.cnki.net/kdn/KCMS/detail/js/min/klib.min.js&#xA;              "></script><script type="text/javascript" src="http://piccache.cnki.net/kdn/KCMS/detail/js/min/Timeaxis.min.js&#xA;              "></script><script type="text/javascript">
+          LoadScript('http://piccache.cnki.net/kdn/KCMS/detail/js/min/cnkisug.min.js',function(){sugPara.IsTopK = false; sugPara.IsExp = false; sugPara.IsAttr = false;InitSug('http://192.168.100.122');});
+        </script></body>
+</html>

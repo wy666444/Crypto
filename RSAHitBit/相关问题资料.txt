@@ -1,0 +1,11 @@
+我:
+https://www.40huo.cn/blog/huxiangbei-writeup.html#menu_index_5
+我:
+https://ctf-wiki.github.io/ctf-wiki/#/crypto/asymmetric/rsa/rsa_coppersmith_attack?id=factoring-with-high-bits-known
+我:
+http://bobao.360.cn/ctf/detail/205.html
+我:
+http://bobao.360.cn/ctf/detail/179.html  估计大部分人是用FlappyPig
+的py脚本解的，但是这脚本的一些逻辑，看不太动，不会改
+我:
+https://cocalc.com/
